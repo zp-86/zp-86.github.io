@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Random Number Generator | Admin</title>
+    {% if adminpass == 'good' %}
+        <h1> Admin Panel </h1>
+        <form method="post">
+        <input type="submit" name="wordle" value="Wordle Answers">
+            </form>
+        {% if wordleans %}
+            <p> {{ wordleans }} </p>
+        {% endif %}
+
+    {% else %}
+        <h1>Password</h1>
+            <form method="post">
+                    <label>
+                        <input type="text" name="passw" placeholder="Enter the password">
+                </label>
+                        <input type="submit" name="submit" value="Submit">
+            </form>
+    {% endif %}
+</html>

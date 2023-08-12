@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Random Number Generator | Generator</title>
+    <h1>Welcome, {{ name }} </h1>
+    <p> What can I do for you? </p>
+
+    {% if numb %}
+        <p> {{ numb }} </p>
+    {% endif %}
+
+    <form method="post">
+    <input type="submit" name="nump" value="Pick a number">
+        <input type="submit" name="numh" value="Show Number History">
+    </form>
+
+    {% if numhiss %}
+        <p> {{ numhiss }} </p>
+    {% endif %}
+</html>
