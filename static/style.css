@@ -1,0 +1,33 @@
+body {
+    background-color: #303030 !important;
+            }
+img {
+    border-radius: 100%;
+            }
+h1 {
+    color: ghostwhite !important;
+    font-size: 35px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: 'Inconsolata', monospace;
+            }
+p {
+    color: ghostwhite !important;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: Vidaloka, serif;
+            }
+a {
+    color: ghostwhite !important;
+    text-decoration: none;
+            }
+ * {
+    font-family: 'Inconsolata', monospace;
+}
+.t-image {
+    position: relative;
+    top: -4px;
+}
