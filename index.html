@@ -15,6 +15,7 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="/static/script.js"></script>
        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: darkslategrey">
          <div class="container-fluid">
              <a class="navbar-brand" href="#" style="padding-top: 8px">
@@ -30,28 +31,4 @@
         </nav>
     <h2 style="color: white; margin-top: 5px; margin-left: 15px">Coming Soon!</h2>
     </body>
-<script>
-window.addEventListener('load', function() {
-  const numBars = 20;
-  const bars = Array.from({ length: numBars }, () => document.createElement('div'));
-  bars.forEach((bar, index) => {
-    bar.className = 'bar';
-    if (index % 2 === 1) {
-      bar.classList.add('down');
-    }
-    bar.style.left = `${index * (window.innerWidth / numBars)}px`;
-    bar.style.background = `rgba(255, 255, 255, ${1 - index / bars.length})`;
-    bar.style.animationDelay = `${Math.random()}s`;
-    document.body.appendChild(bar);
-  });
-
-  setTimeout(() => {
-    document.body.classList.add('bar-wipe-animation');
-  }, 0);
-
-  setTimeout(() => {
-    bars.forEach(bar => bar.remove());
-  }, 2000);
-});
-</script>
 </html>
