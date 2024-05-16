@@ -31,3 +31,32 @@ a {
     position: relative;
     top: -4px;
 }
+.bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100vw / 20);
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.bar-wipe-animation .bar {
+  animation: bar-wipe 1s forwards;
+}
+
+.bar-wipe-animation .bar.down {
+  animation: bar-wipe-down 1s forwards;
+}
+
+@keyframes bar-wipe {
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes bar-wipe-down {
+  to {
+    transform: translateY(100%);
+  }
+}

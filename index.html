@@ -28,16 +28,30 @@
              </div>
          </div>
         </nav>
-        <h1>
-            A page to store all the pages of all my projects
-        </h1>
-        <p>
-            Current:
-        </p>
-        <p>
-            Past:
-        </p>
-            <p>
-            <a>Random Number Generator</a>
+    <h2 style="color: white; margin-top: 5px; margin-left: 15px">Coming Soon!</h2>
     </body>
+<script>
+window.addEventListener('load', function() {
+  const numBars = 20;
+  const bars = Array.from({ length: numBars }, () => document.createElement('div'));
+  bars.forEach((bar, index) => {
+    bar.className = 'bar';
+    if (index % 2 === 1) {
+      bar.classList.add('down');
+    }
+    bar.style.left = `${index * (window.innerWidth / numBars)}px`;
+    bar.style.background = `rgba(255, 255, 255, ${1 - index / bars.length})`;
+    bar.style.animationDelay = `${Math.random()}s`;
+    document.body.appendChild(bar);
+  });
+
+  setTimeout(() => {
+    document.body.classList.add('bar-wipe-animation');
+  }, 0);
+
+  setTimeout(() => {
+    bars.forEach(bar => bar.remove());
+  }, 2000);
+});
+</script>
 </html>
