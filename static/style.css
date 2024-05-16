@@ -10,15 +10,8 @@ h1 {
     text-align: left;
     padding-left: 20px;
     padding-top: 10px;
+    font-weight: 600;
     font-family: 'Inconsolata', monospace;
-            }
-p {
-    color: ghostwhite !important;
-    font-size: 18px;
-    text-align: left;
-    padding-left: 20px;
-    padding-top: 10px;
-    font-family: Vidaloka, serif;
             }
 a {
     color: ghostwhite !important;
@@ -26,7 +19,13 @@ a {
             }
  * {
     font-family: 'Inconsolata', monospace;
+     color: white;
+     font-weight: 600;
 }
+ p {
+     font-weight: 300;
+     font-size: large;
+ }
 .t-image {
     position: relative;
     top: -4px;
