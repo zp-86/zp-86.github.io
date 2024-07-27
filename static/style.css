@@ -59,3 +59,14 @@ a {
     transform: translateY(100%);
   }
 }
+.list-group-item {
+      background-color: #303030;
+      color: #ffffff; /* Optional: Set text color to white for better readability */
+    }
+    .list-group-item a {
+      color: #ffffff; /* Optional: Ensure links are visible against the dark background */
+      text-decoration: none; /* Optional: Remove underline from links */
+    }
+    .list-group-item a:hover {
+      color: #ffcc00; /* Optional: Change color on hover */
+    }
