@@ -61,12 +61,12 @@ a {
 }
 .list-group-item {
       background-color: #303030;
-      color: #ffffff; /* Optional: Set text color to white for better readability */
+      color: #ffffff; 
     }
     .list-group-item a {
-      color: #ffffff; /* Optional: Ensure links are visible against the dark background */
-      text-decoration: none; /* Optional: Remove underline from links */
+      color: #ffffff; 
+      text-decoration: none; 
     }
     .list-group-item a:hover {
-      color: #ffcc00; /* Optional: Change color on hover */
+      color: #ffcc00; 
     }
