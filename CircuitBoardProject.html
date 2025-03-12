@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Breadboard to Circuit Board Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #121212;
+            color: #f8f9fa;
+        }
+        .step {
+            margin: 50px 0;
+        }
+        .step img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Printed Circuit Board Project</h1>
+        <p class="text-center">How we put our real world circuit project on a circuit board.</p>
+
+        <div class="row step align-items-center">
+            <div class="col-md-6">
+                <img src="/static/bb.jpg" alt="Step 1 Image">
+            </div>
+            <div class="col-md-6">
+                <h2>Step 1: Getting Started</h2>
+                <p>After we had made our project, a flashing half adder onto a breadboard, we wanted to make something more stable and permanent. We could have used cheeseboards, but after putting all our components on the cheeseboard, we realized it would become really messy and take a long time. We ended up deciding to try to make a circuit board.</p>
+            </div>
+        </div>
+
+        <div class="row step align-items-center flex-md-row-reverse">
+            <div class="col-md-6">
+                <img src="/static/schem.png" alt="Step 2 Image">
+            </div>
+            <div class="col-md-6">
+                <h2>Step 2: Designing the PCB</h2>
+                <p>To get started, we talked to Mr. Andrade, and he suggested we use EasyEDA to build the board. We downloaded the program and got to work. After watching a quick tutorial on YouTube, we found all our components already in EasyEDA and started placing them in the schematic area. After finding and placing all our components, we just had to connect them all. In EasyEDA, you can see all of the chip diagrams, so connecting everything up was as easy as drawing lines between them. Finally, we verified that everything was connected properly, by checking the chip diagrams online and matching them to the circuit on the breadboard and the one on EasyEDA.</p>
+            </div>
+        </div>
+
+        <div class="row step align-items-center">
+            <div class="col-md-6">
+                <img src="/static/pcb.png" alt="Step 3 Image">
+            </div>
+            <div class="col-md-6">
+                <h2>Step 3: Building the PCB</h2>
+                <p>After the design was done, we made a new circuit board in EasyEDA. After placing the components in the correct order (and also the most compact configuration) we had to design the actual power lines. This can easily be done in EasyEDA, using the auto-routing tool. This tool may have problems if your components are in the wrong spot (you have a resistor on the left and a component all the way on the right) as you can only have 2 lines cross over each other (unless you added more layers). Some of the traces (lines) had to be redone, but most of the board was done.</p>
+            </div>
+        </div>
+
+        <div class="row step align-items-center flex-md-row-reverse">
+            <div class="col-md-6">
+                <img src="/static/jlpcb.png" alt="Step 4 Image">
+            </div>
+            <div class="col-md-6">
+                <h2>Step 4: Printing the PCB</h2>
+                <p>Now that we had the final PCB file, we were ready to print. We decided to use JLPCB as they also can install components for you, meaning we did not have to solder the gates and components ourselves. It also qualified for the OnBoard PCB grant, a free $100 grant for any students trying to make a board. After going to JLPCB, it was as easy as dropping in the files from EasyEDA that it asked for, going through the checkout, and waiting for the board to come in the mail.</p>
+                <a href="https://hackclub.com/onboard/">Grant Info</a>
+            </div>
+        </div>
+
+        <div class="row step align-items-center">
+            <div class="col-md-6">
+                <img src="/static/final.png" alt="Step 5 Image">
+            </div>
+            <div class="col-md-6">
+                <h2>Step 5: Final Assembly</h2>
+                <p>After the boards came, we just had to solder the power connection and it was ready! The boards looked and worked great and we had successfully moved our breadboard projects to a real circuit board!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
