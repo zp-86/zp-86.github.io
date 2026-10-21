@@ -1,61 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zander Plut</title>
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAIAAAADAAAAAwADAAQAAwAXFhUAAQABAAIAAQADAAEABAABAAIBAAAEAQMAAQACAAIAAgADAAIAAgEBAAMBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAggBAAgICQcJCAgICgkIDAcGBwICAgIJCQgICAkIAw8HCAcDCAIIAQgICQIJAgIJCAIHCAIQAggCEAEICAIDAwEICAIBAAIJAgIDAwMICgkJAggJCAgICAkJAggQAwIJCAgCAgIJAgEIAgEBCQMICgEIAgICAggJBwECAg8IEAQCCAgHCQIIAgIIEAgDCAgJCAEBAAgCEQICAQECAgIJBwgBCAcBAQgCCAEABwECCQIIAggCCAgIAggCBwICCQcDAgMCCAIBAwICAQMJCQkJCgMHBwgCAgICAggLEAgIAggICA8IDQkODwgJAgkJDw8FCAgCEAgICAgIDggCCQ4PCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zander Plut</title>
+<meta name="description" content="Zander Plut builds software in Toronto. Co-founder of ClosingLine and Tulip.">
+<meta property="og:title" content="Zander Plut">
+<meta property="og:description" content="Zander Plut builds software in Toronto. Co-founder of ClosingLine and Tulip.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#050a14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%230d2340'/%3E%3Cpath d='M8 4v24M16 4v24M24 4v24M4 8h24M4 16h24M4 24h24' stroke='%233fd6c8' stroke-opacity='.3'/%3E%3Cpath d='M16 8l8 8-8 8-8-8z' fill='%233fd6c8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="modulepreload" href="js/globe.js">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
 </head>
-<body class="home">
-<div class="custom-cursor" aria-hidden="true"></div>
-<div class="grid-background" aria-hidden="true"></div>
-<div class="grid-cars" aria-hidden="true"></div>
+<body>
+<div class="wrap">
+<header class="bar">
+  <a class="brand" href="index.html">Zander Plut</a>
+  <nav class="nav">
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a class="txt" href="zander.txt" target="_blank" rel="noopener" title="Everything on this site as plain text">Text version</a>
+  </nav>
+</header>
 
-<section class="section hero" id="hero">
-    <h1>Zander Plut</h1>
-    <p>Hey! I'm Zander, a student learning to code. Here, you'll find what I'm working on. Enjoy!</p>
-    <div class="scroll-indicator" role="button" tabindex="0" aria-label="Scroll to next section">↓</div>
-</section>
+<main>
+<section id="projects" class="desk" aria-label="Projects">
+  <span class="anchor" id="closingline"></span>
+  <span class="anchor" id="tulip"></span>
+  <span class="anchor" id="circuit-board"></span>
+  <span class="anchor" id="forza"></span>
 
-<section class="section coming-soon" id="coming-soon">
-    <div class="coming-card">
-        <div class="pill"><span class="dot"></span> Founder</div>
-        <h2>ClosingLine</h2>
-        <p>Check it out and start winning at <a href="https://closingline.app/" target="_blank" rel="noopener">closingline.app</a></p>
-        <div class="actions">
-            <a href="https://closingline.app/" target="_blank" rel="noopener" class="learn-more-btn">Learn More</a>
-        </div>
+  <div class="stage">
+    <div class="fallback" aria-hidden="true"></div>
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="shade" aria-hidden="true"></div>
+
+    <div class="hero">
+      <p class="eyebrow">Mississauga · Grade 12</p>
+      <h1>Zander <em>Plut</em></h1>
+      <p class="lede">I build software, from the app on your phone to the server behind it. Right now I'm working on ClosingLine and Tulip, scroll to learn more about them.</p>
+      <ol class="index">
+        <li><a href="#closingline" data-st="1"><span class="n">01</span><span class="p">ClosingLine</span><span class="s">Live on iOS and web · Public beta</span></a></li>
+        <li><a href="#tulip" data-st="2"><span class="n">02</span><span class="p">Tulip</span><span class="s">Invite-only beta</span></a></li>
+        <li><a href="#circuit-board" data-st="3"><span class="n">03</span><span class="p">Circuit Board</span><span class="s">Hardware · School project</span></a></li>
+        <li><a href="#forza" data-st="4"><span class="n">04</span><span class="p">Forza Telemetry</span><span class="s">Open source</span></a></li>
+      </ol>
+      <p class="hint">Scroll to see what's on the desk</p>
     </div>
-</section>
 
-<section class="section projects" id="projects">
-    <h2>Notable GitHub Projects</h2>
-    <div class="project-grid">
-        <div class="project-item">
-            <h3>GPT-4-Website</h3>
-            <p>A nice way to interact with GPT-4 from your own website.</p>
-            <a href="https://github.com/zp-86/GPT-4-Website" target="_blank" class="learn-more-btn">Learn More</a>
-        </div>
-
-        <div class="project-item">
-            <h3>DALL-E-Website</h3>
-            <p>A quick site I made while learning HTML, to interact with the DALL-E API.</p>
-            <a href="https://github.com/zp-86/dall-e-website" target="_blank" class="learn-more-btn">Learn More</a>
-        </div>
-
-        <div class="project-item">
-            <h3>Discord-Leave-Bot</h3>
-            <p>A discord bot that can leave any server it's in.</p>
-            <a href="https://github.com/zp-86/Discord-Leave-Bot" target="_blank" class="learn-more-btn">Learn More</a>
-        </div>
+    <div class="rail" aria-hidden="true">
+      <div class="rail-track"><i class="rail-mark"></i></div>
+      <ol>
+        <li style="top:25%">01</li><li style="top:50%">02</li><li style="top:75%">03</li><li style="top:100%">04</li>
+      </ol>
     </div>
+
+    <article class="tag" data-i="0" aria-labelledby="t-closingline">
+      <div class="tag-card">
+        <div class="tag-head"><span>Part 01 / 04</span></div>
+        <h2 class="tag-name" id="t-closingline">ClosingLine</h2>
+        <p class="tag-role">Live on iOS and web · Public beta</p>
+        <p class="tag-one">Sports picks, backed by a model.</p>
+        <p class="tag-body">Pick NHL and MLB games, build parlays with free virtual Points, and see how a prediction model rates every pick before you make it. Your bets update live as the games play out.</p>
+        <p class="tag-credit">Co-founded with Dylan Plut and Brenden Auger. I built the iPhone app, the website and the server they both run on.</p>
+        <p class="tag-num"><b>+1,587 Points</b> <span>What the model earned betting 100 Points on its top pick every night of the 2024 NHL season.</span></p>
+        <ul class="tag-stack" aria-label="Stack"><li>SwiftUI</li><li>Next.js</li><li>Python</li><li>Flask</li><li>Postgres</li><li>Google Cloud</li></ul>
+        <div class="tag-links"><a class="story" href="closingline.html">Read the story →</a><a class="ext" href="https://closingline.app/" target="_blank" rel="noopener">closingline.app ↗</a></div>
+      </div>
+    </article>
+
+    <article class="tag" data-i="1" aria-labelledby="t-tulip">
+      <div class="tag-card">
+        <div class="tag-head"><span>Part 02 / 04</span></div>
+        <h2 class="tag-name" id="t-tulip">Tulip</h2>
+        <p class="tag-role">Invite-only beta</p>
+        <p class="tag-one">Your travel, on Earth.</p>
+        <p class="tag-body">A 3D globe for everywhere you've been and everywhere you want to go. Pin places, plan trips with friends, and forward a booking email to drop it into the right trip.</p>
+        <p class="tag-credit">Co-founded with Brenden Auger. I built the website, the iPhone app and the server behind them.</p>
+        <p class="tag-num"><b>900+ commits</b> <span>since May 2026</span></p>
+        <ul class="tag-stack" aria-label="Stack"><li>Next.js</li><li>Mapbox</li><li>Python</li><li>FastAPI</li><li>Postgres</li><li>SwiftUI</li></ul>
+        <div class="tag-links"><a class="story" href="tulip.html">Read the story →</a><a class="ext" href="https://tulipmap.ca" target="_blank" rel="noopener">tulipmap.ca ↗</a></div>
+      </div>
+    </article>
+
+    <article class="tag" data-i="2" aria-labelledby="t-circuit-board">
+      <div class="tag-card">
+        <div class="tag-head"><span>Part 03 / 04</span></div>
+        <h2 class="tag-name" id="t-circuit-board">Circuit Board</h2>
+        <p class="tag-role">Hardware · School project</p>
+        <p class="tag-one">From breadboard to printed circuit board.</p>
+        <p class="tag-body">I took a blinking half adder off a breadboard and turned it into a real two-layer circuit board, designed in EasyEDA and made by JLCPCB.</p>
+        <p class="tag-credit">Paid for by Hack Club's OnBoard grant.</p>
+        <div class="tag-links"><a class="story" href="circuit-board.html">Read the story →</a></div>
+      </div>
+    </article>
+
+    <article class="tag" data-i="3" aria-labelledby="t-forza">
+      <div class="tag-card">
+        <div class="tag-head"><span>Part 04 / 04</span></div>
+        <h2 class="tag-name" id="t-forza">Forza Telemetry</h2>
+        <p class="tag-role">Open source</p>
+        <p class="tag-one">Lap analysis for Forza Motorsport.</p>
+        <p class="tag-body">Forza streams live data from your car while you drive. This tool reads it, draws every lap on the track and shows where you gained or lost time against your best.</p>
+        <p class="tag-num"><b>1:24.506</b> <span>My best lap on Maple Valley, in a Hyundai Elantra N</span></p>
+        <ul class="tag-stack" aria-label="Stack"><li>Node.js</li><li>WebSockets</li><li>Next.js</li></ul>
+        <div class="tag-links"><a class="story" href="https://github.com/zp-86/forza-telementry" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+      </div>
+    </article>
+  </div>
 </section>
 
-<script defer src="/static/script.js"></script>
+<div class="ground">
+  <div class="sheetrow">
+    <section id="about" class="sheet note" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <p>I'm Zander, a Grade 12 student in Toronto. I like taking an idea all the way to something people can actually use, and most of my time goes into ClosingLine and Tulip.</p>
+      <div class="note-links"><a class="btn" href="about.html">More about me →</a><a class="btn btn-line" href="projects.html">All projects →</a></div>
+    </section>
+    <section class="earlier" aria-labelledby="earlier-h">
+      <h2 id="earlier-h">Earlier work</h2>
+      <ul class="bins">
+      <li><a href="https://github.com/zp-86/GPT-4-Website" target="_blank" rel="noopener"><span class="bin-label"><b>GPT-4 Website</b><span>A simple site for chatting with GPT-4.</span></span><span class="bin-go" aria-hidden="true">↗</span></a></li>
+      <li><a href="https://github.com/zp-86/dall-e-website" target="_blank" rel="noopener"><span class="bin-label"><b>DALL-E Website</b><span>My first HTML project, a front end for DALL-E.</span></span><span class="bin-go" aria-hidden="true">↗</span></a></li>
+      <li><a href="https://github.com/zp-86/Discord-Leave-Bot" target="_blank" rel="noopener"><span class="bin-label"><b>Discord Leave Bot</b><span>A Discord bot that can leave any server it's in.</span></span><span class="bin-go" aria-hidden="true">↗</span></a></li>
+      </ul>
+    </section>
+  </div>
+<footer class="foot">
+  <div class="container foot-in">
+    <p class="foot-name">Zander Plut · Toronto</p>
+    <div class="foot-tapes">
+      <a href="https://github.com/zp-86" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/alexander-plut/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="zander.txt" target="_blank" rel="noopener">Text version</a>
+    </div>
+    <p class="foot-copy">© 2026</p>
+  </div>
+</footer>
+</div>
+</main>
+</div>
+
+<script src="js/scrub.js"></script>
+<script type="module" src="js/desk.js"></script>
 </body>
 </html>

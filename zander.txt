@@ -1,0 +1,83 @@
+ZANDER PLUT
+Mississauga · Grade 12
+zanderplut.com
+github.com/zp-86
+linkedin.com/in/alexander-plut
+
+I build software, from the app on your phone to the server behind it.
+Right now I'm working on ClosingLine and Tulip.
+
+PROJECTS
+========
+
+ClosingLine                                          closingline.app
+Co-founder · January 2025 to now · Live on iOS and web, public beta
+
+  Sports picks, backed by a model. Pick NHL and MLB games, build parlays
+  with free virtual Points, and see how a prediction model rates every
+  pick before you make it. Your bets update live as the games play out.
+
+  Co-founded with Dylan Plut (CEO) and Brenden Auger (CMO). I built the
+  iPhone app, the website and the server they both run on.
+
+  Stack: SwiftUI, Next.js, React, Tailwind, Python, Flask, Postgres,
+         Redis, Docker, Google Cloud, Stripe, Gemini
+  ~22,000 lines of Swift in the iPhone app.
+  Betting 100 Points on its top pick every night of the 2024 NHL season,
+  the model finished +1,587 Points.
+
+
+Tulip                                                    tulipmap.ca
+Co-founder · May 2026 to now · Invite-only beta
+
+  Your travel, on Earth. A 3D globe for everywhere you've been and
+  everywhere you want to go. Pin places, plan trips with friends, and
+  forward a booking email to drop it into the right trip.
+
+  Co-founded with Brenden Auger. I built the website, the iPhone app and
+  the server behind them.
+
+  Stack: Next.js, React, TypeScript, Mapbox, Python, FastAPI, Postgres,
+         Supabase, SwiftUI
+  900+ commits since May 2026.
+
+
+Circuit Board
+Hardware · School project
+
+  I took a blinking half adder off a breadboard and turned it into a
+  real two-layer circuit board, designed in EasyEDA and made by JLCPCB.
+  Paid for by Hack Club's OnBoard grant.
+
+
+Forza Telemetry                     github.com/zp-86/forza-telementry
+Open source · February 2026
+
+  Lap analysis for Forza Motorsport. The game streams live data from
+  your car while you drive. This tool reads it, draws every lap on the
+  track and shows where you gained or lost time against your best.
+  My best lap on Maple Valley: 1:24.506, in a Hyundai Elantra N.
+
+  Stack: Node.js, WebSockets, Next.js, React, Tailwind
+
+
+EARLIER WORK
+============
+
+  GPT-4 Website       A simple site for chatting with GPT-4.
+                      github.com/zp-86/GPT-4-Website
+  DALL-E Website      My first HTML project, a front end for DALL-E.
+                      github.com/zp-86/dall-e-website
+  Discord Leave Bot   A Discord bot that can leave any server it's in.
+                      github.com/zp-86/Discord-Leave-Bot
+
+
+WHAT I WORK WITH
+================
+
+  Languages  Swift, TypeScript, Python, SQL
+  Apps       SwiftUI, React, Next.js
+  Servers    Flask, FastAPI, Node.js, Docker
+  Data       Postgres, Redis, Supabase
+  Cloud      Google Cloud, Vercel
+  Also       Mapbox, Stripe, EasyEDA

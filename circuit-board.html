@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Circuit Board · Zander Plut</title>
+<meta name="description" content="How Zander Plut moved a half adder from a breadboard to a custom two-layer circuit board.">
+<meta property="og:title" content="Circuit Board · Zander Plut">
+<meta property="og:description" content="How Zander Plut moved a half adder from a breadboard to a custom two-layer circuit board.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#050a14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%230d2340'/%3E%3Cpath d='M8 4v24M16 4v24M24 4v24M4 8h24M4 16h24M4 24h24' stroke='%233fd6c8' stroke-opacity='.3'/%3E%3Cpath d='M16 8l8 8-8 8-8-8z' fill='%233fd6c8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/project.css">
+</head>
+<body class="inner">
+<header class="bar">
+  <a class="brand" href="index.html">Zander Plut</a>
+  <nav class="nav">
+    <a href="projects.html" aria-current="page">Projects</a>
+    <a href="about.html">About</a>
+    <a class="txt" href="zander.txt" target="_blank" rel="noopener" title="Everything on this site as plain text">Text version</a>
+  </nav>
+</header>
+
+<main id="main" class="page">
+  <div class="container">
+    <section class="pj-top" aria-labelledby="pj-title">
+      <div class="pj-head">
+        <div>
+          <p class="kicker">Project · Hardware</p>
+          <h1 id="pj-title">Circuit Board</h1>
+          <p class="pj-what">From breadboard to printed circuit board.</p>
+          <div class="pj-meta"><span class="pill live">School project</span><span class="pill">Two-layer board</span></div>
+        </div>
+        <div class="pj-cta">
+          <a class="btn btn-turq" href="https://hackclub.com/onboard/" target="_blank" rel="noopener">Hack Club OnBoard ↗</a>
+        </div>
+      </div>
+      <div class="pj-tagwrap">
+        <div class="pj-facts">
+          <dl>
+            <div><dt>Designed in</dt><dd>EasyEDA</dd></div>
+            <div><dt>Board</dt><dd>Two layers</dd></div>
+            <div><dt>Made by</dt><dd>JLCPCB, parts assembled</dd></div>
+            <div><dt>Paid for by</dt><dd>Hack Club's $100 OnBoard grant</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <section class="pj-section">
+      <div class="sheet">
+        <div class="pj-prose pj-intro">
+          <p>For a school project I built a half adder that flashes its result on LEDs. It worked on a breadboard, but a breadboard is fragile and messy. I wanted something permanent, so I designed a real circuit board for it.</p>
+        </div>
+        <ol class="pj-steps">
+          <li class="pj-step">
+            <figure class="pj-step-img"><img src="assets/pcb-bb.jpg" width="900" height="396" loading="lazy" alt="The breadboard"></figure>
+            <div>
+              <h3>The breadboard</h3>
+              <p>The circuit already worked on a breadboard. I could have soldered it onto perfboard, but with this many parts it would have been slow and messy. A custom board would be cleaner, and I wanted to learn how to make one.</p>
+            </div>
+          </li>
+          <li class="pj-step">
+            <figure class="pj-step-img"><img src="assets/pcb-schem.jpg" width="900" height="226" loading="lazy" alt="The schematic"></figure>
+            <div>
+              <h3>The schematic</h3>
+              <p>My teacher (Mr. Andrade) suggested EasyEDA. After a short tutorial I found every part I needed in its library and placed them in the schematic. EasyEDA shows each chip's pin diagram, so wiring came down to drawing lines between pins. Then I checked every connection against the datasheets and the breadboard.</p>
+            </div>
+          </li>
+          <li class="pj-step">
+            <figure class="pj-step-img"><img src="assets/pcb-pcb.jpg" width="900" height="390" loading="lazy" alt="The layout"></figure>
+            <div>
+              <h3>The layout</h3>
+              <p>Next I placed the parts on the board, as tight as I could while keeping it logical, and let the auto-router draw the copper traces. On a two-layer board traces can only cross by switching sides, so a badly placed part makes routing fail. I moved a few parts and redrew some traces by hand.</p>
+            </div>
+          </li>
+          <li class="pj-step">
+            <figure class="pj-step-img"><img src="assets/pcb-jlpcb.jpg" width="900" height="426" loading="lazy" alt="The order"></figure>
+            <div>
+              <h3>The order</h3>
+              <p>I ordered from JLCPCB, which can also solder the parts on, so I didn't have to place every chip myself. Hack Club's OnBoard grant gives students $100 toward their first board, and it covered the order. I uploaded the files from EasyEDA, checked out and waited for the mail.</p>
+            </div>
+          </li>
+          <li class="pj-step">
+            <figure class="pj-step-img"><img src="assets/pcb-hi-final.jpg" width="1400" height="1430" loading="lazy" alt="The finished board"></figure>
+            <div>
+              <h3>The finished board</h3>
+              <p>When the boards arrived, all that was left was soldering the power connection. They worked, and they looked a lot better than the breadboard.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <nav class="pj-end" aria-label="Projects">
+      <div class="pj-nav pj-one"><a href="tulip.html" rel="prev">← Previous: Tulip</a></div>
+      <a class="pj-all" href="projects.html">All projects</a>
+    </nav>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="container foot-in">
+    <p class="foot-name">Zander Plut · Toronto</p>
+    <div class="foot-tapes">
+      <a href="https://github.com/zp-86" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/alexander-plut/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="zander.txt" target="_blank" rel="noopener">Text version</a>
+    </div>
+    <p class="foot-copy">© 2026</p>
+  </div>
+</footer>
+</body>
+</html>
