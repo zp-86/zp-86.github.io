@@ -8,147 +8,99 @@
 <meta property="og:title" content="Zander Plut">
 <meta property="og:description" content="Zander Plut builds software in Toronto. Co-founder of ClosingLine and Tulip.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#050a14">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%230d2340'/%3E%3Cpath d='M8 4v24M16 4v24M24 4v24M4 8h24M4 16h24M4 24h24' stroke='%233fd6c8' stroke-opacity='.3'/%3E%3Cpath d='M16 8l8 8-8 8-8-8z' fill='%233fd6c8'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#111317">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23111317'/%3E%3Cpath d='M6 19c3-7 8-10 13-9s7 6 5 10-8 5-12 3' fill='none' stroke='%23e8b46a' stroke-width='1.8' stroke-linecap='round'/%3E%3Cpath d='M11 18c2-3 5-4 7-3s2 3 1 4-4 2-6 1' fill='none' stroke='%23e9ebee' stroke-opacity='.45' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Martian+Mono:wght@300..500&display=swap">
 <link rel="stylesheet" href="css/site.css">
-<link rel="stylesheet" href="css/landing.css">
-<link rel="modulepreload" href="js/globe.js">
-<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
+<script src="js/site.js" defer></script>
 </head>
 <body>
-<div class="wrap">
-<header class="bar">
-  <a class="brand" href="index.html">Zander Plut</a>
-  <nav class="nav">
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a class="txt" href="zander.txt" target="_blank" rel="noopener" title="Everything on this site as plain text">Text version</a>
-  </nav>
-</header>
-
-<main>
-<section id="projects" class="desk" aria-label="Projects">
-  <span class="anchor" id="closingline"></span>
-  <span class="anchor" id="tulip"></span>
-  <span class="anchor" id="circuit-board"></span>
-  <span class="anchor" id="forza"></span>
-
-  <div class="stage">
-    <div class="fallback" aria-hidden="true"></div>
-    <canvas id="gl" aria-hidden="true"></canvas>
-    <div class="vignette" aria-hidden="true"></div>
-    <div class="shade" aria-hidden="true"></div>
-
+<div class="top">
+  <canvas class="contour" aria-hidden="true"></canvas>
+  <div class="shell">
+    <header class="bar">
+      <a class="brand" href="index.html">Zander Plut</a>
+      <nav class="nav"><a href="projects.html">Projects</a><a href="about.html">About</a><a href="zander.txt" target="_blank" rel="noopener">Text version</a></nav>
+    </header>
     <div class="hero">
-      <p class="eyebrow">Mississauga · Grade 12</p>
-      <h1>Zander <em>Plut</em></h1>
-      <p class="lede">I build software, from the app on your phone to the server behind it. Right now I'm working on ClosingLine and Tulip, scroll to learn more about them.</p>
-      <ol class="index">
-        <li><a href="#closingline" data-st="1"><span class="n">01</span><span class="p">ClosingLine</span><span class="s">Live on iOS and web · Public beta</span></a></li>
-        <li><a href="#tulip" data-st="2"><span class="n">02</span><span class="p">Tulip</span><span class="s">Invite-only beta</span></a></li>
-        <li><a href="#circuit-board" data-st="3"><span class="n">03</span><span class="p">Circuit Board</span><span class="s">Hardware · School project</span></a></li>
-        <li><a href="#forza" data-st="4"><span class="n">04</span><span class="p">Forza Telemetry</span><span class="s">Open source</span></a></li>
-      </ol>
-      <p class="hint">Scroll to see what's on the desk</p>
+      <p class="mono">43.59° N · 79.64° W · Mississauga</p>
+      <h1>Zander Plut</h1>
+      <p>Grade 12. I build software, from the app on your phone to the server behind it.</p>
     </div>
+  </div>
+</div>
 
-    <div class="rail" aria-hidden="true">
-      <div class="rail-track"><i class="rail-mark"></i></div>
-      <ol>
-        <li style="top:25%">01</li><li style="top:50%">02</li><li style="top:75%">03</li><li style="top:100%">04</li>
-      </ol>
+<main class="shell">
+  <section class="sec first" aria-labelledby="projects-h">
+    <div class="sec-h"><h2 id="projects-h">Projects</h2><a class="mono" href="projects.html">All projects →</a></div>
+    <div class="reads">
+      <a href="closingline.html"><span class="mono"><i class="dot"></i>Live</span><span class="n">+1,587</span><span class="ds">Points from the model's top pick, 2024 NHL season</span><span class="nm">ClosingLine</span></a>
+      <a href="tulip.html"><span class="mono"><i class="dot beta"></i>Beta</span><span class="n">900+</span><span class="ds">commits since May 2026</span><span class="nm">Tulip</span></a>
+      <a href="circuit-board.html"><span class="mono"><i class="dot off"></i>Done</span><span class="n">2</span><span class="ds">layer board, made by JLCPCB</span><span class="nm">Circuit Board</span></a>
+      <a href="https://github.com/zp-86/forza-telementry" target="_blank" rel="noopener"><span class="mono"><i class="dot off"></i>OSS</span><span class="n">1:24.506</span><span class="ds">best lap on Maple Valley</span><span class="nm">Forza Telemetry</span></a>
     </div>
+    <div class="earl"><span>Earlier</span><a href="https://github.com/zp-86/GPT-4-Website" target="_blank" rel="noopener">GPT-4 Website</a><a href="https://github.com/zp-86/dall-e-website" target="_blank" rel="noopener">DALL-E Website</a><a href="https://github.com/zp-86/Discord-Leave-Bot" target="_blank" rel="noopener">Discord Leave Bot</a></div>
+  </section>
 
-    <article class="tag" data-i="0" aria-labelledby="t-closingline">
-      <div class="tag-card">
-        <div class="tag-head"><span>Part 01 / 04</span></div>
-        <h2 class="tag-name" id="t-closingline">ClosingLine</h2>
-        <p class="tag-role">Live on iOS and web · Public beta</p>
-        <p class="tag-one">Sports picks, backed by a model.</p>
-        <p class="tag-body">Pick NHL and MLB games, build parlays with free virtual Points, and see how a prediction model rates every pick before you make it. Your bets update live as the games play out.</p>
-        <p class="tag-credit">Co-founded with Dylan Plut and Brenden Auger. I built the iPhone app, the website and the server they both run on.</p>
-        <p class="tag-num"><b>+1,587 Points</b> <span>What the model earned betting 100 Points on its top pick every night of the 2024 NHL season.</span></p>
-        <ul class="tag-stack" aria-label="Stack"><li>SwiftUI</li><li>Next.js</li><li>Python</li><li>Flask</li><li>Postgres</li><li>Google Cloud</li></ul>
-        <div class="tag-links"><a class="story" href="closingline.html">Read the story →</a><a class="ext" href="https://closingline.app/" target="_blank" rel="noopener">closingline.app ↗</a></div>
+  <section class="sec" aria-labelledby="now-h">
+    <div class="sec-h"><h2 id="now-h">Now building</h2></div>
+    <article class="show">
+      <div>
+        <h3><a href="closingline.html">ClosingLine</a></h3>
+        <p class="one">Sports picks, backed by a model.</p>
+        <p class="body">Pick NHL and MLB games, build parlays with free virtual Points, and see how a prediction model rates every pick before you make it. I built the iPhone app, the website and the server they run on.</p>
+        <div class="nums"><p><b>~22,000</b><span>lines of Swift</span></p><p><b>+1,587</b><span>Points, 2024 NHL season</span></p></div>
+        <ul class="tags gold" aria-label="Stack"><li>SwiftUI</li><li>Next.js</li><li>Python</li><li>Flask</li><li>Postgres</li><li>Google Cloud</li></ul>
+        <div class="links"><a href="closingline.html">Read the story →</a><a href="https://closingline.app/" target="_blank" rel="noopener">closingline.app ↗</a></div>
+      </div>
+      <div class="media phones">
+        <img src="assets/cl-hi-1-sports-board.jpg" width="900" height="1956" loading="lazy" alt="Tonight's games, with the model's win chance next to each team.">
+        <img src="assets/cl-hi-4-bet-slip.jpg" width="900" height="1956" loading="lazy" alt="Building a parlay with the combined odds and payout.">
+        <img src="assets/cl-hi-5-my-bets.jpg" width="900" height="1956" loading="lazy" alt="Open bets updating live during the games.">
       </div>
     </article>
-
-    <article class="tag" data-i="1" aria-labelledby="t-tulip">
-      <div class="tag-card">
-        <div class="tag-head"><span>Part 02 / 04</span></div>
-        <h2 class="tag-name" id="t-tulip">Tulip</h2>
-        <p class="tag-role">Invite-only beta</p>
-        <p class="tag-one">Your travel, on Earth.</p>
-        <p class="tag-body">A 3D globe for everywhere you've been and everywhere you want to go. Pin places, plan trips with friends, and forward a booking email to drop it into the right trip.</p>
-        <p class="tag-credit">Co-founded with Brenden Auger. I built the website, the iPhone app and the server behind them.</p>
-        <p class="tag-num"><b>900+ commits</b> <span>since May 2026</span></p>
-        <ul class="tag-stack" aria-label="Stack"><li>Next.js</li><li>Mapbox</li><li>Python</li><li>FastAPI</li><li>Postgres</li><li>SwiftUI</li></ul>
-        <div class="tag-links"><a class="story" href="tulip.html">Read the story →</a><a class="ext" href="https://tulipmap.ca" target="_blank" rel="noopener">tulipmap.ca ↗</a></div>
+    <article class="show flip">
+      <div>
+        <h3><a href="tulip.html">Tulip</a></h3>
+        <p class="one">Your travel, on Earth.</p>
+        <p class="body">A 3D globe for everywhere you've been and everywhere you want to go. Pin places, plan trips with friends, and forward a booking email to drop it into the right trip.</p>
+        <div class="nums"><p><b>900+</b><span>commits since May 2026</span></p><p><b>2</b><span>founders, with Brenden Auger</span></p></div>
+        <ul class="tags gold" aria-label="Stack"><li>Next.js</li><li>Mapbox</li><li>Python</li><li>FastAPI</li><li>Supabase</li><li>SwiftUI</li></ul>
+        <div class="links"><a href="tulip.html">Read the story →</a><a href="https://tulipmap.ca" target="_blank" rel="noopener">tulipmap.ca ↗</a></div>
+      </div>
+      <div class="media duo">
+        <img src="assets/tl-passport.jpg" width="1360" height="1000" loading="lazy" alt="Tulip's passport, with every visited country lit up.">
+        <img src="assets/tl-miles.jpg" width="730" height="1340" loading="lazy" alt="Miles planning a trip day by day.">
       </div>
     </article>
+  </section>
 
-    <article class="tag" data-i="2" aria-labelledby="t-circuit-board">
-      <div class="tag-card">
-        <div class="tag-head"><span>Part 03 / 04</span></div>
-        <h2 class="tag-name" id="t-circuit-board">Circuit Board</h2>
-        <p class="tag-role">Hardware · School project</p>
-        <p class="tag-one">From breadboard to printed circuit board.</p>
-        <p class="tag-body">I took a blinking half adder off a breadboard and turned it into a real two-layer circuit board, designed in EasyEDA and made by JLCPCB.</p>
-        <p class="tag-credit">Paid for by Hack Club's OnBoard grant.</p>
-        <div class="tag-links"><a class="story" href="circuit-board.html">Read the story →</a></div>
-      </div>
-    </article>
+  <section class="sec" aria-labelledby="tools-h">
+    <div class="sec-h"><h2 id="tools-h">Toolbox</h2></div>
+    <dl class="stack">
+      <div><dt class="mono">Languages</dt><dd>Swift, TypeScript, Python, SQL</dd></div>
+      <div><dt class="mono">Apps</dt><dd>SwiftUI, React, Next.js</dd></div>
+      <div><dt class="mono">Servers</dt><dd>Flask, FastAPI, Node.js, Docker</dd></div>
+      <div><dt class="mono">Data</dt><dd>Postgres, Redis, Supabase</dd></div>
+      <div><dt class="mono">Cloud</dt><dd>Google Cloud, Vercel</dd></div>
+      <div><dt class="mono">Also</dt><dd>Mapbox, Stripe, EasyEDA</dd></div>
+    </dl>
+  </section>
 
-    <article class="tag" data-i="3" aria-labelledby="t-forza">
-      <div class="tag-card">
-        <div class="tag-head"><span>Part 04 / 04</span></div>
-        <h2 class="tag-name" id="t-forza">Forza Telemetry</h2>
-        <p class="tag-role">Open source</p>
-        <p class="tag-one">Lap analysis for Forza Motorsport.</p>
-        <p class="tag-body">Forza streams live data from your car while you drive. This tool reads it, draws every lap on the track and shows where you gained or lost time against your best.</p>
-        <p class="tag-num"><b>1:24.506</b> <span>My best lap on Maple Valley, in a Hyundai Elantra N</span></p>
-        <ul class="tag-stack" aria-label="Stack"><li>Node.js</li><li>WebSockets</li><li>Next.js</li></ul>
-        <div class="tag-links"><a class="story" href="https://github.com/zp-86/forza-telementry" target="_blank" rel="noopener">View on GitHub ↗</a></div>
-      </div>
-    </article>
-  </div>
-</section>
+  <section class="sec" aria-labelledby="gh-h">
+    <div class="sec-h"><h2 id="gh-h">GitHub</h2><span class="mono" id="gh-total">Contributions in the last year</span></div>
+    <div class="gh" id="gh" data-src="data/contributions.json"><div class="gh-in"><div class="months"></div><div class="cells"></div></div></div>
+    <div class="gh-foot"><a class="mono" href="https://github.com/zp-86" target="_blank" rel="noopener">github.com/zp-86 ↗</a><span class="scale mono" aria-hidden="true"><span>Less</span><i></i><i></i><i></i><i></i><i></i><span>More</span></span></div>
+  </section>
+</main>
 
-<div class="ground">
-  <div class="sheetrow">
-    <section id="about" class="sheet note" aria-labelledby="about-h">
-      <h2 id="about-h">About</h2>
-      <p>I'm Zander, a Grade 12 student in Toronto. I like taking an idea all the way to something people can actually use, and most of my time goes into ClosingLine and Tulip.</p>
-      <div class="note-links"><a class="btn" href="about.html">More about me →</a><a class="btn btn-line" href="projects.html">All projects →</a></div>
-    </section>
-    <section class="earlier" aria-labelledby="earlier-h">
-      <h2 id="earlier-h">Earlier work</h2>
-      <ul class="bins">
-      <li><a href="https://github.com/zp-86/GPT-4-Website" target="_blank" rel="noopener"><span class="bin-label"><b>GPT-4 Website</b><span>A simple site for chatting with GPT-4.</span></span><span class="bin-go" aria-hidden="true">↗</span></a></li>
-      <li><a href="https://github.com/zp-86/dall-e-website" target="_blank" rel="noopener"><span class="bin-label"><b>DALL-E Website</b><span>My first HTML project, a front end for DALL-E.</span></span><span class="bin-go" aria-hidden="true">↗</span></a></li>
-      <li><a href="https://github.com/zp-86/Discord-Leave-Bot" target="_blank" rel="noopener"><span class="bin-label"><b>Discord Leave Bot</b><span>A Discord bot that can leave any server it's in.</span></span><span class="bin-go" aria-hidden="true">↗</span></a></li>
-      </ul>
-    </section>
-  </div>
 <footer class="foot">
-  <div class="container foot-in">
-    <p class="foot-name">Zander Plut · Toronto</p>
-    <div class="foot-tapes">
-      <a href="https://github.com/zp-86" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/alexander-plut/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="zander.txt" target="_blank" rel="noopener">Text version</a>
-    </div>
-    <p class="foot-copy">© 2026</p>
+  <div class="shell foot-in">
+    <div class="foot-l"><span>© 2026 Zander Plut</span><a href="https://github.com/zp-86" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/alexander-plut/" target="_blank" rel="noopener">LinkedIn</a><a href="zander.txt" target="_blank" rel="noopener">Text version</a></div>
+    <a class="arch" href="2026-sept/index.html" title="The scrolling desk version of this site, from September 2026">Sept 2026 version</a>
   </div>
 </footer>
-</div>
-</main>
-</div>
-
-<script src="js/scrub.js"></script>
-<script type="module" src="js/desk.js"></script>
 </body>
 </html>

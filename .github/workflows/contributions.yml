@@ -1,0 +1,50 @@
+name: Update GitHub graph
+
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch contribution calendar
+        env:
+          GH_TOKEN: ${{ secrets.CONTRIB_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          gh api graphql -F login="${{ github.repository_owner }}" -f query='
+            query($login: String!) {
+              user(login: $login) {
+                contributionsCollection {
+                  contributionCalendar {
+                    totalContributions
+                    weeks { contributionDays { date contributionCount } }
+                  }
+                }
+              }
+            }' \
+          | jq -c '.data.user.contributionsCollection.contributionCalendar
+                   | {start: .weeks[0].contributionDays[0].date,
+                      total: .totalContributions,
+                      c: [.weeks[].contributionDays[].contributionCount]}' \
+          > data/contributions.json.tmp
+          test -s data/contributions.json.tmp
+          mv data/contributions.json.tmp data/contributions.json
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- data/contributions.json; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/contributions.json
+          git commit -m "Update GitHub graph data"
+          git push
